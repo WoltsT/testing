@@ -18,6 +18,7 @@ pipeline {
             steps {
                 script {
                         sh "ls-la"
+                        sh "cat ${XAMPP_PATH}"
                         sh "cp -r /* ${HTDOCS_DIR}"  
                         sh "${APACHE_BIN}/apachectl restart"  // Reiniciar el servidor Apache
                     }
