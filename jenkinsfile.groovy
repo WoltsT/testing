@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        XAMPP_PATH = 'C:/xampp/htdocs'
+        XAMPP_PATH = 'C:/Users/jmontes/Downloads'
         APACHE_BIN = "C:/xamppapache/bin"
         HTDOCS_DIR = "C:/xampp/htdocs/my-static-website"
     }
