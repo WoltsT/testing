@@ -2,9 +2,9 @@ pipeline {
     agent any
     
     environment {
-        XAMPP_PATH = 'C:/Users/jmontes/Downloads'
-        APACHE_BIN = "C:/xamppapache/bin"
-        HTDOCS_DIR = "C:/xampp/htdocs/my-static-website"
+        XAMPP_PATH = "xampp/apache"
+        APACHE_BIN = "xampp/apache/bin"
+        HTDOCS_DIR = "xampp/htdocs/my-static-website"
     }
     
     stages {
@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                         //sh "ls-la"
-                       bat "dir ${XAMPP_PATH}"
+                       bat "dir  ${XAMPP_PATH}"
                         //sh "cp -r /* ${HTDOCS_DIR}"  
                         //sh "${APACHE_BIN}/apachectl restart"  // Reiniciar el servidor Apache
                     }
