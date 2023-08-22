@@ -2,9 +2,9 @@ pipeline {
     agent any
     
     environment {
-        XAMPP_PATH = 'C:\xampp'
-        APACHE_BIN = "C:\xampp\apache\bin"
-        HTDOCS_DIR = "C:\xampp\htdocs"
+        XAMPP_PATH = '\xampp'
+        APACHE_BIN = "\xampp\apache\bin"
+        HTDOCS_DIR = "\xampp\htdocs"
     }
     
     stages {
